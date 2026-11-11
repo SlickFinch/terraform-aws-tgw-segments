@@ -36,3 +36,12 @@ output "route_table_ids" {
   description = "Segment route table IDs."
   value       = module.segments.route_table_ids
 }
+
+# In the spoke stack: route the spoke's private subnets to shared through the Transit Gateway.
+module "spoke_routes" {
+  source = "../../modules/spoke-routes"
+
+  transit_gateway_id = module.transit_gateway.ec2_transit_gateway_id
+  route_table_ids    = ["rtb-0123456789abcdef0"]
+  destination_cidrs  = ["10.20.0.0/16"]
+}
