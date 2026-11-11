@@ -29,6 +29,8 @@ module "segments" {
 
 See [examples/complete](examples/complete).
 
+Spoke stacks route traffic to the Transit Gateway with the [spoke-routes](modules/spoke-routes) submodule.
+
 ## How segments work
 
 - `segments` lists the segments. Each one gets a route table named `<name>-<segment>`.

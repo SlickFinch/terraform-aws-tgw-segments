@@ -19,6 +19,7 @@ No providers.
 | Name | Source | Version |
 | ---- | ------ | ------- |
 | <a name="module_segments"></a> [segments](#module\_segments) | ../.. | n/a |
+| <a name="module_spoke_routes"></a> [spoke\_routes](#module\_spoke\_routes) | ../../modules/spoke-routes | n/a |
 | <a name="module_transit_gateway"></a> [transit\_gateway](#module\_transit\_gateway) | terraform-aws-modules/transit-gateway/aws | ~> 3.3 |
 
 ## Resources
